@@ -4,3 +4,4 @@ dynamic-ip.iml
 /src/main/resources/config.properties
 log/
 target/
+src/test/
