@@ -1,0 +1,6 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea/
+dynamic-ip.iml
+/src/main/resources/config.properties
+log/
+target/
