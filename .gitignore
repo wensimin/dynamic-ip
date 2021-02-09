@@ -5,3 +5,5 @@ dynamic-ip.iml
 log/
 target/
 src/test/
+!/src/main/resources/config-dev.properties
+src/main/resources/config-dev.properties
