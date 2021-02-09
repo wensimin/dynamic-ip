@@ -1,0 +1,5 @@
+# yaml 配置
+version: '3'
+services:
+  app:
+    build: .
