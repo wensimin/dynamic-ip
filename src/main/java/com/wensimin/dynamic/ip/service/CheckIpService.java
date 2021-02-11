@@ -1,12 +1,9 @@
 package com.wensimin.dynamic.ip.service;
 
-import java.net.URISyntaxException;
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
 import com.wensimin.dynamic.ip.utils.HttpMethod;
 import com.wensimin.dynamic.ip.utils.HttpUtils;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class CheckIpService {
 	private Logger log = LogManager.getLogger(CheckIpService.class);
@@ -14,12 +11,12 @@ public class CheckIpService {
 	private String ip;
 	private static CheckIpService service;
 
-	private CheckIpService() throws URISyntaxException {
-		url = "http://checkip.amazonaws.com/";
+	private CheckIpService() {
+		url = "https://checkip.amazonaws.com/";
 		ip = "";
 	}
 
-	public static CheckIpService getService() throws URISyntaxException {
+	public static CheckIpService getService() {
 		if (service == null) {
 			service = new CheckIpService();
 		}

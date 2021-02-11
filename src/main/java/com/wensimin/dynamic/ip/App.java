@@ -13,7 +13,7 @@ import com.wensimin.dynamic.ip.utils.ResourceUtils;
  *
  */
 public class App {
-	public static void main(String[] args) throws Exception {
+	public static void main(String[] args) {
 		Logger log = LogManager.getLogger(App.class);
 		Integer time = 60 * 1000 * Integer.parseInt(ResourceUtils.getString("time"));
 		CheckIpService ipService = CheckIpService.getService();
