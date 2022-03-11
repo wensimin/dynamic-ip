@@ -13,6 +13,7 @@ import javax.crypto.spec.SecretKeySpec;
 
 public class AliSignUtils {
 	static final String ENCODE = "UTF-8";
+	//不清楚为何要在secret后+& 迁移到auto-mission中被这个浪费了很多时间,老版ali api找不到了
 	private static final String SECRET = ResourceUtils.getString("ali.secret") + "&";
 	private static final String Id = ResourceUtils.getString("ali.id");
 
